@@ -20,16 +20,15 @@ export function Sidebar({
         return azureResources
       case "gcp":
         return gcpResources
-      case "terraform":
-        return terraformResources
+      case "oracle":
+        return oracleResources
       default:
         return awsResources
     }
   }
-
   // AWS resources
   const awsResources = [
-    { type: "ec2Instance", name: "EC2 Instance", category: "compute", icon: "/images/aws/ec2.png" },
+    { type: "ec2Instance", name: "EC2 Instance", category: "compute", icon: "/google-cloud-icon.svg" },
     { type: "s3Bucket", name: "S3 Bucket", category: "storage", icon: "/images/aws/s3.png" },
     { type: "rdsInstance", name: "RDS Database", category: "database", icon: "/images/aws/rds.png" },
     { type: "lambdaFunction", name: "Lambda Function", category: "compute", icon: "/images/aws/lambda.png" },
@@ -62,8 +61,8 @@ export function Sidebar({
     { type: "vpc", name: "VPC Network", category: "network", icon: "/placeholder.svg?height=32&width=32" },
   ]
 
-  // Terraform resources (placeholder - would be expanded in a real implementation)
-  const terraformResources = [
+  // Oracle resources (placeholder - would be expanded in a real implementation)
+  const oracleResources = [
     { type: "instance", name: "Instance", category: "compute", icon: "/placeholder.svg?height=32&width=32" },
     { type: "bucket", name: "Bucket", category: "storage", icon: "/placeholder.svg?height=32&width=32" },
     { type: "database", name: "Database", category: "database", icon: "/placeholder.svg?height=32&width=32" },
@@ -98,8 +97,8 @@ export function Sidebar({
         return "Azure"
       case "gcp":
         return "Google Cloud"
-      case "terraform":
-        return "Terraform"
+      case "oracle":
+        return "Oracle"
       default:
         return selectedCloud
     }
@@ -186,10 +185,10 @@ function ResourceCard({
       onDragStart={(event) => onDragStart(event, resource.type, resource.name)}>
       <CardContent className="p-2 flex flex-col items-center">
         <div className="w-8 h-8 mb-1 flex items-center justify-center">
-          <img
+          {/* <img
             src={resource.icon || "/placeholder.svg?height=32&width=32"}
             alt={resource.name}
-            className="max-w-full max-h-full" />
+            className="max-w-full max-h-full" /> */}
         </div>
         <span className="text-xs text-center">{resource.name}</span>
       </CardContent>

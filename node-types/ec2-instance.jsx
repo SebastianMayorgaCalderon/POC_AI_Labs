@@ -8,10 +8,10 @@ export function EC2InstanceNode({
       className="px-4 py-2 shadow-md rounded-md bg-white border border-gray-200 w-48">
       <div className="flex items-center">
         <div className="w-10 h-10 flex-shrink-0 mr-2">
-          <img
-            src="/images/aws/ec2.png"
+          {/* <img
+            src="aws-icon.svg"
             alt="EC2 Instance"
-            className="w-full h-full object-contain" />
+            className="w-full h-full object-contain" /> */}
         </div>
         <div>
           <div className="text-sm font-bold">{data.label}</div>

@@ -14,25 +14,25 @@ export default function CloudSelection({
       id: "aws",
       name: "Amazon Web Services",
       description: "Create infrastructure diagrams for AWS CloudFormation",
-      logoUrl: "/images/aws-logo.png",
+      logoUrl: "/aws-icon.svg",
     },
     {
       id: "azure",
       name: "Microsoft Azure",
       description: "Create infrastructure diagrams for Azure Resource Manager",
-      logoUrl: "/images/azure-logo.png",
+      logoUrl: "/azure-icon.svg",
     },
     {
       id: "gcp",
       name: "Google Cloud Platform",
       description: "Create infrastructure diagrams for Google Cloud Deployment Manager",
-      logoUrl: "/images/gcp-logo.png",
+      logoUrl: "/google-cloud-icon.svg",
     },
     {
-      id: "terraform",
-      name: "Terraform",
-      description: "Create infrastructure diagrams for Terraform HCL",
-      logoUrl: "/images/terraform-logo.png",
+      id: "oracle",
+      name: "Oracle",
+      description: "Create infrastructure diagrams for Oracle Cloud Infrastructure",
+      logoUrl: "/oracle-icon.svg",
     },
   ]
 

@@ -8,10 +8,10 @@ export function S3BucketNode({
       className="px-4 py-2 shadow-md rounded-md bg-white border border-gray-200 w-48">
       <div className="flex items-center">
         <div className="w-10 h-10 flex-shrink-0 mr-2">
-          <img
+          {/* <img
             src="/images/aws/s3.png"
             alt="S3 Bucket"
-            className="w-full h-full object-contain" />
+            className="w-full h-full object-contain" /> */}
         </div>
         <div>
           <div className="text-sm font-bold">{data.label}</div>

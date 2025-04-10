@@ -107,7 +107,7 @@ function CanvasContent({
     if (reactFlowInstance) {
       const flow = reactFlowInstance.toObject()
       console.log("Saving diagram:", flow)
-      // In a real implementation, this would save to a database or generate CloudFormation/Terraform
+      // In a real implementation, this would save to a database or generate CloudFormation/Oracle
     }
   }
 
@@ -116,7 +116,7 @@ function CanvasContent({
     if (reactFlowInstance) {
       const flow = reactFlowInstance.toObject()
       console.log("Exporting diagram:", flow)
-      // In a real implementation, this would generate CloudFormation/Terraform code
+      // In a real implementation, this would generate CloudFormation/Oracle code
 
       // Example of how you might download a JSON representation
       const data = JSON.stringify(flow, null, 2)
@@ -140,8 +140,8 @@ function CanvasContent({
         return "Azure"
       case "gcp":
         return "Google Cloud"
-      case "terraform":
-        return "Terraform"
+      case "oracle":
+        return "Oracle"
       default:
         return selectedCloud
     }
